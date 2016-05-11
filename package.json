@@ -1,0 +1,31 @@
+{
+  "name": "generator-yo-react",
+  "version": "1.0.0",
+  "description": "Yeoman Generator React Component",
+  "main": "index.js",
+  "files": [
+    "app",
+    "templates"
+  ],
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roy9102/yo-react.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "yo-react"
+  ],
+  "author": "Roy&Liz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roy9102/yo-react/issues"
+  },
+  "homepage": "https://github.com/Roy9102/yo-react#readme",
+  "dependencies": {
+    "glob": "^7.0.3",
+    "yeoman-generator": "^0.22.5"
+  }
+}

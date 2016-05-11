@@ -1,0 +1,28 @@
+{
+    "name": "<%= appName%>",
+    "version": "<%= version%>",
+    "description": "<%= appName%> ui component for react",
+    "keywords": [
+        "react",
+        "react-component",
+        "react-<%= appName%>",
+        "<%= appName%>"
+    ],
+    "author": "<%= author%>",
+    "files":["lib", "assets/*.css"],
+    "licenses": "MIT",
+    <% if(isPublic) {%>
+    "publishConfig":{
+        "registry": "http://github.com/Roy9102"
+    },
+    <%}%>
+    "main":"./lib/index",
+    "scripts": {
+        "start": "WEBPACK_DEV=true  webpack-dev-server --hot --inline --port <%=port%> --profile  --color --progress",
+        "public": "WEBPACK_DEV=false webpack --profile  --color --progress",
+        "test":  "test"
+    },
+    "pre-commit": [
+        "lint"
+    ]
+}
